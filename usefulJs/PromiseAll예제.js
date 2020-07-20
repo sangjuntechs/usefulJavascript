@@ -44,7 +44,7 @@ const getKia = async () => {
 }
 
 const getHyundai = async () => {
-    await wait(4000);
+    await wait(3000);
     return 'Hyundai';
 }
 
@@ -66,4 +66,13 @@ async function allProcess() {
     await makeCar2();
 }
 
-console.log(allProcess());
+allProcess();
+
+//promise race = process중 제일 빨리 끝난것만 반환
+
+async function race() {
+    const carList = await Promise.race([getKia(), getHyundai(), getChevrolet()]);
+    console.log(carList);
+}
+
+race()
