@@ -14,3 +14,10 @@ minusBtn.onclick = () => {
     const current = parseInt(numberBox.innerText);
     numberBox.innerText = current - 1;
 }
+
+function get() {
+
+    let sell = numberBox.textContent;
+    const value = document.querySelector('.value')
+    value.innerText = `${sell}개 주문`
+}
