@@ -19,5 +19,10 @@ function get() {
 
     let sell = numberBox.textContent;
     const value = document.querySelector('.value')
-    value.innerText = `${sell}개 주문`
+    
+    if(sell > 0) {
+    value.innerText = `'${sell}'개를 주문합니다.`
+    } else {
+        value.innerText = '1개 이상 주문을 해야합니다.'
+    }
 }
