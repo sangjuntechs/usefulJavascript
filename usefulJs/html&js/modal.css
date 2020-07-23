@@ -11,8 +11,9 @@
     padding: 50px;
     border: 2px solid black;
     border-radius: 30px;
-    width: 30%;
+    width: 20%;
     background-color: white;
+    height: 30%;
 }
 
 .modal_background {
@@ -23,8 +24,28 @@
     align-items: center;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
 }
 
 .hide {
-    display: none;
+    display: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+button {
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
 }

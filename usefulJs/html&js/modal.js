@@ -6,6 +6,6 @@ btn.onclick = () => {
     modal.classList.remove('hide');
 }
 
-closeBtn.onclick =() => {
+closeBtn.onclick = () => {
     modal.classList.add('hide');
 }
